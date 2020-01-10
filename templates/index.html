@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    First page
+{% endblock %}
+
+{% block body %}
+    <p>
+        Dette er kroppen hvor jeg kan skrive om oss.
+    </p>
+
+    <form action="{{ url_for('hello') }}" method="POST">
+      <input type="text" name="name" placeholder="Enter Your Name">
+      <button>Submit</button>
+    </form>
+
+{% endblock %}
